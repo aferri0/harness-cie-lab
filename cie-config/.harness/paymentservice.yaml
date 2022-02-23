@@ -159,3 +159,7 @@ pipeline:
         - name: seusername
           type: String
           value: <+input>
+        - name: ffsdkkeyprod
+          type: String
+          default: 9ded44cf-40cf-4811-9ba9-bd069bb5db7a
+          value: <+input>
