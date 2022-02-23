@@ -103,8 +103,8 @@ pipeline:
                                                     repoName: harness-cie-lab
                                                     branch: main
                                   - manifest:
-                                        identifier: templates
-                                        type: Values
+                                        identifier: template
+                                        type: K8sManifest
                                         spec:
                                             store:
                                                 type: Github
@@ -115,6 +115,7 @@ pipeline:
                                                         - harness-deploy/payment-service-dev
                                                     repoName: harness-cie-lab
                                                     branch: main
+                                            skipResourceVersioning: false
                               artifacts:
                                   primary:
                                       spec:
